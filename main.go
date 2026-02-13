@@ -4,5 +4,11 @@ import (
 	"fmt"
 )
 func main(){
-	fmt.Println("Hello world")
+	m:=make(map[string]int)
+	//insert/update
+	m["apple"] = 0
+	//
+v,exist := m["apple"]
+	
+fmt.Println(v, exist)
 }
