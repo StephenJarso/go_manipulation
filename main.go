@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"manipulation/exercises"
 )
+type Key struct{
+	Row, Col int
+}
 func main(){
-	m:=make(map[string]int)
-	//insert/update
-	m["apple"] = 0
-	//
-v,exist := m["apple"]
+m:=[]int{2,3,4,5}
+v:=[]int{4,9,16,25}
 	
-fmt.Println(v, exist)
+fmt.Println(exercises.Comp(m,v))
 }
